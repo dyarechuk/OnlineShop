@@ -10,6 +10,7 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_REACT_APP_APP_ID,
 };
 
-const firebaseApp = await initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getFirestore(firebaseApp);
 
-export const db = await getFirestore(firebaseApp);
+export { db };

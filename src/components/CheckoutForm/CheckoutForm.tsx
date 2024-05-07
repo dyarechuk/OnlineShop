@@ -109,10 +109,13 @@ export const CheckoutForm = () => {
         <div className='lg:px-6 lg:tracking-widest'>
           <label htmlFor='address'></label>
           <input
-            {...register('address', { required: true, minLength: {
-              value: 5,
-              message: 'Address must be at least 5 characters long',
-            }, })}
+            {...register('address', {
+              required: true,
+              minLength: {
+                value: 5,
+                message: 'Address must be at least 5 characters long',
+              },
+            })}
             className='lg:shadow-xl lg:w-full lg:px-4 lg:py-4 lg:rounded-lg placeholder-slate-400 lg:text-2xl lg:focus:outline-none lg:focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50'
             placeholder='ADDRESS'
             type='text'
