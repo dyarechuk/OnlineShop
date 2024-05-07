@@ -67,6 +67,9 @@ export const CheckoutForm = () => {
                 value: 3,
                 message: 'Name must be at least 3 characters long',
               },
+              validate: (value) => {
+                return !!value.trim();
+              }
             })}
             className='lg:shadow-sm shadow-slate-500 lg:w-full lg:px-4 lg:py-4 lg:rounded-lg placeholder-slate-400 lg:text-2xl lg:focus:outline-none lg:focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50'
             placeholder='NAME'
@@ -91,6 +94,9 @@ export const CheckoutForm = () => {
                 value: 3,
                 message: 'Surname must be at least 3 characters long',
               },
+              validate: (value) => {
+                return !!value.trim();
+              }
             })}
             className='lg:shadow-xl lg:w-full lg:px-4 lg:py-4 lg:rounded-lg placeholder-slate-400 lg:text-2xl lg:focus:outline-none lg:focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50'
             placeholder='SURNAME'
@@ -115,6 +121,9 @@ export const CheckoutForm = () => {
                 value: 5,
                 message: 'Address must be at least 5 characters long',
               },
+              validate: (value) => {
+                return !!value.trim();
+              }
             })}
             className='lg:shadow-xl lg:w-full lg:px-4 lg:py-4 lg:rounded-lg placeholder-slate-400 lg:text-2xl lg:focus:outline-none lg:focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50'
             placeholder='ADDRESS'
@@ -139,6 +148,9 @@ export const CheckoutForm = () => {
                 value: /^[0-9]+$/,
                 message: 'Please, enter a valid phone number',
               },
+              validate: (value) => {
+                return !!value.trim();
+              }
             })}
             className='lg:w-full lg:shadow-xl lg:px-4 lg:py-4 lg:rounded-lg placeholder-slate-400 lg:text-2xl lg:focus:outline-none lg:focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50'
             placeholder='PHONE'
