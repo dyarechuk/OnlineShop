@@ -37,7 +37,7 @@ export const productsFetch = createAsyncThunk(
   'products/productsFetch',
   async () => {
     const response = await axios.get(
-      'http://onlineshopapi-production.up.railway.app/products',
+      'https://onlineshopapi-production.up.railway.app/products',
     );
 
     return response?.data;
