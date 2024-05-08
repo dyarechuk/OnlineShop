@@ -1,4 +1,4 @@
-# Weather app
+# OnlineShop
 
 [DEMO LINK](https://onlineshop-production-a998.up.railway.app/#/)
 
